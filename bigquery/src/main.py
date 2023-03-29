@@ -2,7 +2,7 @@ import logging
 import typing
 
 # Setting logger level
-logging.root.setLevel(logging.NOTSET)
+logging.root.setLevel(logging.INFO)
 
 try:
     from google.cloud import bigquery
