@@ -1,0 +1,5 @@
+select country, port_name, port_latitude, port_longitude
+from `takehomeassignment-382012.bigqueryassignment.world_port_index`
+where provisions = true and water = true and fuel_oil = true and diesel = true
+order by ST_DISTANCE(port_geom, ST_GEOGPOINT(-38.706256,32.610982)) asc
+limit 1

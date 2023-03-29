@@ -1,0 +1,9 @@
+select *
+from (
+  select country, count(*) port_count
+  from `takehomeassignment-382012.bigqueryassignment.world_port_index`
+  where cargo_wharf = true
+  group by country
+) t1
+order by t1.port_count desc
+limit 1
