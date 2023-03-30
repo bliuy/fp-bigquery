@@ -21,7 +21,7 @@ class TestFunctions(unittest.TestCase):
     def test_valid_load_query(self):
         
         # Arrange
-        fp: str = "src/queries/bq-1.txt"
+        fp: str = "bigquery/src/queries/bq-1.txt"
         
         # Act
         result = fn.load_query(fp)

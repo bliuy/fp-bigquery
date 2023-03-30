@@ -18,9 +18,9 @@ def main():
     # Constants
     JobInformation = typing.NamedTuple("JobInformation", [("table_id", str), ("sql_filepath", str)])
     context: typing.Dict[int, JobInformation] = {}
-    context[1] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q1", r"src/queries/bq-1.txt")
-    context[2] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q2", r"src/queries/bq-2.txt")
-    context[3] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q3", r"src/queries/bq-3.txt")
+    context[1] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q1", r"bigquery/src/queries/bq-1.txt")
+    context[2] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q2", r"bigquery/src/queries/bq-2.txt")
+    context[3] = JobInformation(r"takehomeassignment-382012.bigqueryassignment.Q3", r"bigquery/src/queries/bq-3.txt")
 
     # Creating the client
     try:
